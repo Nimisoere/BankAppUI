@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="logged-user">
-                            <img src="img/johndoe.jpg" class="profile-img" /> John Doe
+                            <img src="img/johndoe.jpg" id="profile-img" class="profile-img" /> <span id="username">John Doe</span>
                         </div>
                     </div>
                 </div>
@@ -33,13 +33,13 @@
         </header>
         <menu class="main-menu">
             <ul class="menu-items">
-                <li><a href="#"><img src="img/Side Menu/ic-dashboard.svg" class="menu-icon" /> Dashboard</a></li>
-                <li><a href="#"><img src="img/Side Menu/ic-accounts.svg" class="menu-icon" /> Accounts</a></li>
-                <li class="active"><a href="#"><img src="img/Side Menu/ic-cards.svg" class="menu-icon" /> Cards</a></li>
-                <li><a href="#"><img src="img/Side Menu/ic-payments.svg" class="menu-icon" /> Payment</a></li>
-                <li><a href="#"><img src="img/Side Menu/ic-transfers.svg" class="menu-icon" /> Transfers</a></li>
-                <li><a href="#"><img src="img/Side Menu/ic-airtime.svg" class="menu-icon" /> Airtime</a></li>
-                <li><a href="#"><img src="img/Side Menu/ic-settings.svg" class="menu-icon" /> Settings</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-dashboard.svg" class="menu-icon" id="dashabord-link" /> Dashboard</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-accounts.svg" class="menu-icon" id="accounts-link" /> Accounts</a></li>
+                <li class="active"><a href="#"><img src="img/Side Menu/ic-cards.svg" id="cards-link" class="menu-icon" /> Cards</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-payments.svg" id="payment-link" class="menu-icon" /> Payment</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-transfers.svg"id="transfers-link" class="menu-icon" /> Transfers</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-airtime.svg" id="airtime-link" class="menu-icon" /> Airtime</a></li>
+                <li><a href="#"><img src="img/Side Menu/ic-settings.svg" id="settings-link" class="menu-icon" /> Settings</a></li>
             </ul>
 
         </menu>
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2 col-md-1">
-                        <div class="burger-menu">
+                        <div class="burger-menu" id="burger-menu">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -70,24 +70,24 @@
                     <div class="col-xs-12">
                         <div class="account-carousel" data-slideout-ignore>
                             <div class="text-center account-info">
-                                <p class="desc-text">
+                                <p class="desc-text" id="desc">
                                     Balance
                                 </p>
-                                <p class="account-balance">
+                                <p class="account-balance" id="acc-balance">
                                     N 979153.36
                                 </p>
-                                <p class="account-balance-2">
+                                <p class="account-balance-2" id="acc-balance-2">
                                     16.500 SP
                                 </p>
                             </div>
                             <div class="text-center account-info">
-                                <p class="desc-text">
+                                <p class="desc-text" id="desc_1">
                                     Balance
                                 </p>
-                                <p class="account-balance">
+                                <p class="account-balance" id="acc_1-balance">
                                     N 979153.36
                                 </p>
-                                <p class="account-balance-2">
+                                <p class="account-balance-2" id="acc_1-balance-2">
                                     16.500 SP
                                 </p>
                             </div>
@@ -109,91 +109,91 @@
         </div>
 
         <div class="transactions wrap">
-            <div class="transaction">
+            <div class="transaction" id="transaction_1">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-7">
                             <div>
-                                <p class="transaction-description">ATM Lagos</p>
-                                <p class="transaction-time">Today</p>
+                                <p class="transaction-description" id="transaction-description">ATM Lagos</p>
+                                <p class="transaction-time" id="transaction-time">Today</p>
                             </div>
                         </div>
                         <div class="col-xs-5">
                             <div class="text-right">
-                                <p class="transaction-amount debit">- N 450.00</p>
-                                <p class="transaction-type">Bank Withdraw</p>
+                                <p class="transaction-amount debit" id="transaction-amount">- N 450.00</p>
+                                <p class="transaction-type" id="transaction-type">Bank Withdraw</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="transaction">
+            <div class="transaction" id="transaction_2">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-7">
                             <div>
-                                <p class="transaction-description">ATM Lagos</p>
-                                <p class="transaction-time">Yesterday</p>
+                                <p class="transaction-description" id="transaction-description_2">ATM Lagos</p>
+                                <p class="transaction-time" id="transaction-time_2">Yesterday</p>
                             </div>
                         </div>
                         <div class="col-xs-5">
                             <div class="text-right">
-                                <p class="transaction-amount credit">+ N 450.00</p>
-                                <p class="transaction-type">Bank Withdraw</p>
+                                <p class="transaction-amount credit" id="transaction-amount_2">+ N 450.00</p>
+                                <p class="transaction-type" id="transaction-type_2">Bank Withdraw</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="transaction">
+            <div class="transaction" id="transaction_3">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-7">
                             <div>
-                                <p class="transaction-description">003 645 6548 65</p>
-                                <p class="transaction-time">01/06/2015</p>
+                                <p class="transaction-description" id="transaction-description_3">003 645 6548 65</p>
+                                <p class="transaction-time" id="transaction-time_3">01/06/2015</p>
                             </div>
                         </div>
                         <div class="col-xs-5">
                             <div class="text-right">
-                                <p class="transaction-amount debit">- 100 SP</p>
-                                <p class="transaction-type">Airtime Recharge</p>
+                                <p class="transaction-amount debit" id="transaction-amount_3">- 100 SP</p>
+                                <p class="transaction-type" id="transaction-type_3">Airtime Recharge</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="transaction">
+            <div class="transaction" id="transaction_4">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-7">
                             <div>
-                                <p class="transaction-description">John Doe</p>
-                                <p class="transaction-time">31/05/2015</p>
+                                <p class="transaction-description" id="transaction-description_4">John Doe</p>
+                                <p class="transaction-time" id="transaction-time_4">31/05/2015</p>
                             </div>
                         </div>
                         <div class="col-xs-5">
                             <div class="text-right">
-                                <p class="transaction-amount credit">+ N 450.00</p>
-                                <p class="transaction-type">Transfer</p>
+                                <p class="transaction-amount credit" id="transaction-amount_4">+ N 450.00</p>
+                                <p class="transaction-type" id="transaction-type_4">Transfer</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="transaction">
+            <div class="transaction" id="transaction_5">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-7">
                             <div>
-                                <p class="transaction-description">003 645 6548 65</p>
-                                <p class="transaction-time">01/06/2015</p>
+                                <p class="transaction-description" id="transaction-type_5">003 645 6548 65</p>
+                                <p class="transaction-time" id="transaction-time_5">01/06/2015</p>
                             </div>
                         </div>
                         <div class="col-xs-5">
                             <div class="text-right">
-                                <p class="transaction-amount debit">- 100 SP</p>
-                                <p class="transaction-type">Airtime Recharge</p>
+                                <p class="transaction-amount debit" id="transaction-amount_5">- 100 SP</p>
+                                <p class="transaction-type" id="transaction-type_5">Airtime Recharge</p>
                             </div>
                         </div>
                     </div>
